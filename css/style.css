@@ -1,0 +1,194 @@
+body {
+    font-family: "Merriweather Sans", sans-serif;
+    margin:0;
+    color: white;
+    background: #200f22;
+    /* overflow-x: hidden; //to remove scroll */
+}
+
+* {
+    box-sizing:border-box;
+}
+
+header {
+    background: #200f22;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.header-container {
+    max-width: 1250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.header-container .logo{
+    height: 30px;
+    margin-right: 10px
+}
+
+.header-container .logo img{
+    height: 100%;
+}
+
+.search {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.search-container {
+    background-color: #301533;
+    height: 60px;
+    border-radius: 10px;
+    border: 2px solid #222328;
+    display: flex;
+    overflow: hidden;
+}
+
+.input-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.input-container input{
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.input-container i{
+    font-size: 16px;
+    margin-left: 25px;
+}
+
+.button-container {
+    background-color: #9e63a5;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button-container:hover {
+    background-color: #831d8f;
+}
+
+.jobs-list {
+    background-color:#200f22;
+    max-width: 1250px;
+    width: 100%;
+    height: 100vh; /*vertical height*/
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+    align-items: center;
+}
+
+.jobs-list h1 {
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+.jobs-container {
+    display: grid;
+    background: #200f22;
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr);
+}
+
+ .job-tile {
+    width:30rem;
+    background-color: #301533;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding: 30px; 
+    transition: transform 0.2s; 
+}
+
+.job-tile:hover {
+    transform: scale(1.05); /*largens the size to the scale of 1.05*/
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+}
+
+.top img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.rolename {
+    padding: 20px 0px;
+}
+
+.rolename span{
+    font-size: 16px;
+}
+
+.description {
+    flex-grow: 1;
+    height: 105px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.buttons {
+    color: black;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.button {
+    flex:1;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 10px;
+    color: #c08bc0;
+    background-color: #2e2e39;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.message:hover {
+    color: #e6e6e6;
+    background-color: #777777;
+}
+
+.apply-now:hover {
+    color: #e6e6e6;
+    background-color: #831d8f;
+}
+
+.apply-now {
+    color: white;
+    background-color: #9e63a5;
+    margin-right: 15px;
+}
