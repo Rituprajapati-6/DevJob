@@ -10,7 +10,7 @@ document.querySelector(".button-container").addEventListener("click", ()=> {
 })
 
 function getJobs() {//promise
-    return fetch("data.json") 
+    return fetch("../data.json") 
     .then(response => response.json())
     .then(data => {
         return data;
